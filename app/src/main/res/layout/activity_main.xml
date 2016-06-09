@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rayasha.ambientlightsensorapp.MainActivity">
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_gravity="center"/>
+    <ProgressBar
+        android:id="@+id/lightmeter"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:padding="20dp"
+        android:progress="0"/>
+    <TextView
+        android:id="@+id/reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:text="Name"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/sensorName"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Type"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/type"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="maxRange"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/maxRange"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="minDelay"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/minDelay"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Power"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/power"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Resolution"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/resolution"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Vendor"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/vendor"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Version"
+                      android:layout_marginRight="10dp"/>
+            <TextView android:id="@+id/version"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
